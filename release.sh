@@ -27,6 +27,8 @@ cat > docs/updates.json <<JSON
 JSON
 
 git add -A
-git commit -qm "Release $version"
+git commit -qm "Release $version
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 git push -q
 echo "Released $version: $base/zen-tweaks-$version.xpi"
