@@ -1,0 +1,9 @@
+{
+  "addons": {
+    "zen-tweaks@alzyad.local": {
+      "updates": [
+        { "version": "0.1.1", "update_link": "https://alzyad.github.io/zen-tweaks/zen-tweaks-0.1.1.xpi" }
+      ]
+    }
+  }
+}
