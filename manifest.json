@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Zen Tweaks",
+  "version": "0.1.1",
+  "description": "Personal site fixes, each toggleable.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "zen-tweaks@alzyad.local",
+      "strict_min_version": "128.0",
+      "update_url": "https://alzyad.github.io/zen-tweaks/updates.json"
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*"
+      ],
+      "js": [
+        "features.js",
+        "bridge.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://x.com/*"
+      ],
+      "js": [
+        "features/x-scroll-fix/main.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  }
+}
